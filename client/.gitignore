@@ -1,9 +1,9 @@
 .cache/
 coverage/
-dist/*
-!dist/index.html
+dist/
 node_modules/
 *.log
+.parcel-cache/*
 
 # OS generated files
 .DS_Store

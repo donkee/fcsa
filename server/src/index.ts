@@ -13,6 +13,10 @@ io.on('connection', (socket) => {
     const quote = getQuote();
     socket.emit('new quote', quote);
   }, 5000);
+
+  setInterval(() => {
+    socket.emit('new time', Date.now());
+  }, 500);
 });
 
 const getRandomInt = (max: number) => {
